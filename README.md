@@ -5,7 +5,7 @@
 </p>
 shortner is a link shortner created with vueJS version 3 using the Bitly API.
 
-It was created at the end of january 2023 and finished by end of february 2023.
+It was created at the beginning of february 2023 and finished by end of february 2023.
 
 ## prerequisites
 You will need an bitly API key and an Account to get a key. 
