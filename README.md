@@ -26,7 +26,7 @@ In case everything turns out great it will return a shortnered Link
 If something went wrong, it will return some error in one of those conditions: 
 - input error, if empty
 - input error, if wrong link format
-- API error if wrong API key or API related error in the bitly account
+- API error, if wrong API key or API related error in the bitly account
 
 In case of an API Error, please refer to the [Bitly API Doc](https://dev.bitly.com/ "API Documentation 4.0.0")
 
