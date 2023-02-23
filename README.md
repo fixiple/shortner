@@ -8,7 +8,12 @@ shortner is a link shortner created with vueJS version 3 using the Bitly API.
 It was created at the end of january 2023 and finished by end of february 2023.
 
 ## prerequisites
-You will need an bitly API key and an Account to get a key. Refer to the bitly website for more informations:
+You will need an bitly API key and an Account to get a key. 
+``` 
+accessToken: "<your API Key here>",
+```
+
+Refer to the bitly website for more informations:
 
 - [Bitly Home page](https://bitly.com/ "Bitly Home Page")
 - [Sign up Page](https://bitly.com/a/sign_up/ "Sign up page Bitly")
