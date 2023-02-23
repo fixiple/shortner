@@ -1,35 +1,31 @@
 <template>
     <h3>Welcome to the link Shorter</h3>
     <h3>paste the link you want to shorten here below:</h3>
-    <input type="text" ref="linkToShorten" placeholder="https://www.twitch.tv/" value=""/>
-    <input type="button" value="shorten Link" name="shorten" @click="userAction"/> 
+    <input type="text" ref="linkToShorten" placeholder="https://www.youtube.com/watch?v=gwDoRPcPxtc" value=""/>
+    <input type="button" value="shorten Link" name="shorten" @click="userAction"> 
     <div id="error" v-if="this.gotAnError">
         <p>{{this.errors}}</p>   
     </div>
     <div id="result" v-if="this.validResult">
         <p>Here's your result:</p>
         <a :href="this.result" target="_blank">{{this.result}}</a>
-    </div>
-    <customfooter/>    
+    </div>    
 </template>
 
 <script>
-import customfooter from "./components/footer";
 export default {
-  name: 'App',
-  components: {
-    customfooter,
-  },
-  data: function() {
+    name: 'Shortner',
+    data: function() {
         return {
             result: "",
             validResult: false,
-            accessToken: "<your API Key here>",
+            accessToken: "af1ba18f5c0f65d0848c55e678a9e04c7ce9fde0",
             validLink: false,
             gotAnError: false,
             errors: "",
         }
     },
+
     methods: {
         
         isInvalidUrlRegex (urlString) {
@@ -112,49 +108,33 @@ export default {
 }
 </script>
 
-<style>
-#app {
-    font-family: Avenir, Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    margin-top: 60px;
-}
+<style scoped>
+    h3{
+        font-size: 2.5em;
+    }
 
-body{
-    background-image: url("assets/background.jpg");
-    background-size: no-repeat;
-}
+    input[type="text"]{
+        border-radius: 5px;
+        padding: 3.5em 2.5em;
+        font-size: 24pt;
+        
+    }
 
-h3{
-    font-size: 2.5em;
-}
+    input[type="button"]{
+        font-size: 24pt;
+    }
 
-input[type="text"]{
-    border-radius: 5px;
-    padding: 3.5em 2.5em;
-    font-size: 24pt;
-    display: block;
-    margin:0 auto;
-}
+    div#result{
+        border: 1cm solid green;
+        padding: 55px;
+        background-color: green;
+        color: azure;
+    }
 
-input[type="button"]{
-    margin-top: 15px;
-    font-size: 24pt;
-}
-
-div#result{
-    border: 1cm solid green;
-    padding: 55px;
-    background-color: green;
-    color: azure;
-}
-
-div#error{
-    border: 1cm solid red;
-    padding: 15px;
-    background-color: red;
-    color: azure;
-}
+    div#error{
+        border: 1cm solid red;
+        padding: 15px;
+        background-color: red;
+        color: azure;
+    }
 </style>
