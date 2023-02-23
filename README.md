@@ -3,7 +3,7 @@
 <p align="center">
  here's a gif image of the website 😊
 </p>
-shortner is a link shortner created with vueJS version 3 using the Bitly API.
+
 
 It was created at the beginning of february 2023 and finished by end of february 2023.
 
