@@ -1,7 +1,8 @@
 # shortner
 ![linkshortener_vueJSfinalcompressed](https://user-images.githubusercontent.com/59767843/221048760-1dc420aa-288e-48ad-a1d0-744505852cba.gif)
-here's a gif image of the website 😊
-
+<p align="center">
+ here's a gif image of the website 😊
+</p>
 shortner is a link shortner created with vueJS version 3 using the Bitly API.
 
 It was created at the end of january 2023 and finished by end of february 2023.
